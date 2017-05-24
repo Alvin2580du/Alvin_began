@@ -60,7 +60,7 @@ def get_loader(root, batch_size, scale_size, data_format, split=None, is_graysca
 
 if __name__ == "__main__":
     from my_utils import prepare_dirs_and_logger
-    from config import get_config
+    from my_config import get_config
     import numpy as np
 
     config, unparsed = get_config()
