@@ -46,7 +46,6 @@ def main(config):
         if not config.model_name:
             raise Exception("[!] You should specify `load_path` to load a pretrained model")
         trainer.test()
-        # trainer.visualize()
 
 
 if __name__ == "__main__":
