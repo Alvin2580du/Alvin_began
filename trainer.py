@@ -119,7 +119,7 @@ class Trainer(object):
             # dirty way to bypass graph finilization error
             g = tf.get_default_graph()
             g._finalized = False
-            pp.pprint("****" * 5)
+            pp.pprint("**** test program ****")
             self.build_test_model()
 
     def train(self):
