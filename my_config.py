@@ -6,7 +6,7 @@ def str2bool(v):
     return v.lower() in ('true', '1')
 
 arg = argparse.ArgumentParser()
-arg.add_argument('--dataset', type=str, default='new_datasets')  # data sets name must be under the  config.data_dir
+arg.add_argument('--dataset', type=str, default='new_datasets') # data sets directory must be under the  config.data_dir
 arg.add_argument('--batch_size', type=int, default=16)
 arg.add_argument('--is_train', type=str2bool, default=True)   # True is train, and False is test
 arg.add_argument('--max_step', type=int, default=300000)
